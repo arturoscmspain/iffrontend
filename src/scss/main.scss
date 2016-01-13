@@ -1,0 +1,8 @@
+@import "if-settings";
+@import "vendor/normalize/normalize";
+@import "generic/test";
+.mainScss {
+	background-color: pink;
+	display: flex;
+	box-sizing: border-box;
+}         
