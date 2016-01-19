@@ -1,6 +1,7 @@
 // CONFIG  ========================================
 var config  = {
-    inmofactoryLocalPath : 'C:/gitscmspain/realestate-inmofactory/realestate-inmofactory/InmofactoryMVC4/'
+    inmofactoryLocalPath : 'C:/Users/oscar.ramirez/workspace/realestate-inmofactory/InmofactoryMVC4/'
+    //inmofactoryLocalPath : 'C:/gitscmspain/realestate-inmofactory/realestate-inmofactory/InmofactoryMVC4/'
 };
 
 // VARIABLES ========================================
@@ -50,7 +51,7 @@ var onError = function(err) {
 
 // CSS's de Inmofactory ===============================================
 gulp.task('cssContent', function() {
-    gulp.src( path.contentRoot + '/css/**/*.scss')
+    gulp.src( path.contentRoot + '/**/*.scss')
         .pipe(plumber({
             errorHandler: onError
         }))
@@ -60,7 +61,7 @@ gulp.task('cssContent', function() {
                                   root_value: 10,
                                   prop_white_list: ['font', 'font-size']
          }) ]))
-        .pipe(gulp.dest( path.contentRoot + '/css' ));
+        .pipe(gulp.dest( path.contentRoot));
 });
 
 
