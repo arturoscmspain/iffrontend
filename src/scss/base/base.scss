@@ -1,0 +1,35 @@
+html {
+	font-size: 0px + $doc-font-size;
+}
+
+html,
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+	color: #333333;
+	font-weight: 400;
+	font-family: 'Roboto Slab', sans-serif;
+	line-height: 1.5em;
+}
+
+h2 {
+	@include font-size($xxbig);
+	font-weight: 300;
+	line-height: 130%;
+}
+
+
+@media screen and (max-width: 360px) {
+	$doc-font-size: 12px;
+	html {
+		font-size: 0px + $doc-font-size;
+	}
+}
